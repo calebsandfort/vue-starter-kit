@@ -11,8 +11,8 @@ module.exports = {
       host: "ec2-34-222-11-55.us-west-2.compute.amazonaws.com",
       key: "~/.ssh/cspdealtools.pem",
       ref: "origin/master",
-      repo: "git@github.com:calebsandfort/guerilla-deal-analyzer.git",
-      path: "/home/ubuntu/cspdealtools",
+      repo: "git@github.com:calebsandfort/vue-starter-kit.git",
+      path: "/home/ubuntu/vuestarterkit",
       "post-deploy":
         "npm install && npm run build:backend && git stash && pm2 startOrRestart ecosystem.config.js"
     }

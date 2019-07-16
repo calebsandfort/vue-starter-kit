@@ -1,29 +1,79 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
-  </div>
+  <v-app>
+    <router-view />
+  </v-app>
 </template>
 
-<style lang="scss">
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-#nav {
-  padding: 30px;
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-    &.router-link-exact-active {
-      color: #42b983;
+<script>
+export default {
+  name: "App",
+  data() {
+    return {};
+  },
+
+  methods: {
+    goBack() {
+      window.history.length > 1 ? this.$router.go(-1) : this.$router.push("/");
+    },
+    goHome() {
+      this.$router.push("/");
     }
   }
+};
+</script>
+
+<style>
+.hide-text-field-details .v-text-field__details {
+  display: none;
+}
+
+.small-text-field {
+  font-size: 14px;
+  padding: 0 4px;
+}
+
+.condensed-table table.v-table tbody td:first-child,
+.condensed-table table.v-table tbody td:not(:first-child),
+.condensed-table table.v-table tbody th:first-child,
+.condensed-table table.v-table tbody th:not(:first-child),
+.condensed-table table.v-table thead td:first-child,
+.condensed-table table.v-table thead td:not(:first-child),
+.condensed-table table.v-table thead th:first-child,
+.condensed-table table.v-table thead th:not(:first-child),
+.condensed-table table.v-table tfoot td:first-child,
+.condensed-table table.v-table tfoot td:not(:first-child),
+.condensed-table table.v-table tfoot th:first-child,
+.condensed-table table.v-table tfoot th:not(:first-child) {
+  padding: 0 12px;
+}
+
+.super-condensed-table table.v-table tbody td:first-child,
+.super-condensed-table table.v-table tbody td:not(:first-child),
+.super-condensed-table table.v-table tbody th:first-child,
+.super-condensed-table table.v-table tbody th:not(:first-child),
+.super-condensed-table table.v-table thead td:first-child,
+.super-condensed-table table.v-table thead td:not(:first-child),
+.super-condensed-table table.v-table thead th:first-child,
+.super-condensed-table table.v-table thead th:not(:first-child),
+.super-condensed-table table.v-table tfoot td:first-child,
+.super-condensed-table table.v-table tfoot td:not(:first-child),
+.super-condensed-table table.v-table tfoot th:first-child,
+.super-condensed-table table.v-table tfoot th:not(:first-child) {
+  padding: 0 6px;
+  font-size: 12px;
+  height: 36px;
+}
+
+.super-condensed-table table.v-table tbody td:first-child {
+  padding-left: 12px;
+}
+
+.super-condensed-table table.v-table thead th:first-child {
+  padding-left: 36px;
+}
+
+.super-condensed-table table.v-table thead tr,
+.super-condensed-table table.v-table tfoot tr {
+  height: 36px;
 }
 </style>

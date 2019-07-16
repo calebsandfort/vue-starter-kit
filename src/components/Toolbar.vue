@@ -13,16 +13,12 @@
       >
         <v-icon>arrow_back</v-icon>
       </v-btn>
-      <span>Columbia Sunset </span>
-      <span class="font-weight-light">DEAL TOOLS</span>
+      <span>Vue </span>
+      <span class="font-weight-light">STARTER KIT</span>
     </v-toolbar-title>
     <v-spacer></v-spacer>
     <v-toolbar-items class="hidden-sm-and-down">
-      <v-btn flat :to="'/lead-finder'">Lead Finder</v-btn>
-      <v-btn flat :to="'/deal-calculator'">Deal Calculator</v-btn>
-      <v-btn flat :to="'/deal-wizard'">Deal Wizard</v-btn>
       <v-btn flat :to="'/sandbox'">Sandbox</v-btn>
-      <v-btn flat :to="'/research'">Research</v-btn>
     </v-toolbar-items>
   </v-toolbar>
 </template>

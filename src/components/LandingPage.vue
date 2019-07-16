@@ -14,28 +14,17 @@
           </v-flex>
           <v-flex mb-4>
             <h1 class="display-2 font-weight-bold mb-3">
-              Let's Make a Deal!
+              Vue Starter Kit
             </h1>
             <p class="subheading font-weight-regular">
-              Various tools for anaylzing real estate investement leads.
+              Starter kit for Vue project
             </p>
           </v-flex>
           <v-flex mb-5 xs12>
             <h2 class="headline font-weight-bold mb-3">Sections</h2>
             <v-layout justify-center class="nav-links-wrapper">
-              <router-link :to="'/comp-assistant'" class="subheading mx-3"
-                >Comp Assistant</router-link
-              >
-              <router-link :to="'/lead-finder'" class="subheading mx-3"
-                >Lead Finder</router-link
-              >
-              <router-link
-                :to="'/deal-calculator-finder'"
-                class="subheading mx-3"
-                >Deal Calculator</router-link
-              >
-              <router-link :to="'/research'" class="subheading mx-3"
-                >Research</router-link
+              <router-link :to="'/sandbox'" class="subheading mx-3"
+                >Sandbox</router-link
               >
             </v-layout>
           </v-flex>
@@ -53,78 +42,8 @@ export default {
   components: {
     Toolbar
   },
-  beforeCreate() {
-    //this.$store.dispatch("team/fetchList");
-    // this.$store.dispatch("season/fetchList");
-  },
-  mounted() {
-    //this.$store.commit("ui/setShowBackButton", false);
-  },
   data: function() {
-    return {
-      technologyStack: [
-        {
-          name: "ApexCharts",
-          logo: "apexcharts.png",
-          url: "https://apexcharts.com/"
-        },
-        {
-          name: "Apollo",
-          logo: "apollo.png",
-          url: "https://www.apollographql.com/"
-        },
-        {
-          name: "AWS",
-          logo: "aws.png",
-          url: "https://aws.amazon.com/"
-        },
-        {
-          name: "Chai",
-          logo: "chai.png",
-          url: "https://www.chaijs.com/"
-        },
-        {
-          name: "GraphQL",
-          logo: "graphql.svg",
-          url: "https://graphql.org/"
-        },
-        {
-          name: "Mocha",
-          logo: "mocha.png",
-          url: "https://mochajs.org/"
-        },
-        {
-          name: "PostgreSQL",
-          logo: "postgresql.png",
-          url: "https://www.postgresql.org/"
-        },
-        {
-          name: "Ubuntu",
-          logo: "ubuntu.png",
-          url: "https://www.ubuntu.com/"
-        },
-        {
-          name: "Vue.js",
-          logo: "vue.png",
-          url: "https://vuejs.org/"
-        },
-        {
-          name: "Vue Router",
-          logo: "vue-router.png",
-          url: "https://router.vuejs.org/"
-        },
-        {
-          name: "Vuetify",
-          logo: "vuetify.png",
-          url: "https://vuetifyjs.com/en/"
-        },
-        {
-          name: "Vuex",
-          logo: "vuex.png",
-          url: "https://vuex.vuejs.org/"
-        }
-      ]
-    };
+    return {};
   }
 };
 </script>

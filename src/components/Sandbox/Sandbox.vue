@@ -1,37 +1,29 @@
 <template>
-  <div>
-    Sandbox$END$
-  </div>
+  <v-container fluid class="px-0 pt-0">
+    <Toolbar back-path="/"></Toolbar>
+    <v-content>
+      <v-container fluid grid-list-lg>
+        <v-card>
+          <v-card-text>
+            Sandbox
+          </v-card-text>
+        </v-card>
+      </v-container>
+    </v-content>
+  </v-container>
 </template>
 
 <script>
-import _ from "lodash";
-import { mapState, mapMutations, mapActions } from "vuex";
+import { mapState, mapActions } from "vuex";
+import Toolbar from "../Toolbar";
 
 export default {
   name: "Sandbox",
-  components: {},
-  props: {},
+  components: {
+    Toolbar
+  },
   data() {
     return {};
-  },
-  computed: {
-    // ...mapState({
-    //   example: state => state.example,
-    // }),
-    // example: function() {return {}}
-  },
-  watch: {
-    // comps: function () {}
-  },
-  methods: {
-    // ...mapMutations({
-    //   example: "example/example",
-    // }),
-    // ...mapActions({
-    //   setField: "example/example",
-    // }),
-    // example() {}
   }
 };
 </script>

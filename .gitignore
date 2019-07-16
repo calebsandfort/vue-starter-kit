@@ -1,6 +1,8 @@
 .DS_Store
 node_modules
 /dist
+/dist_backend
+/src/backend/services/scrape/files
 
 # local env files
 .env.local
